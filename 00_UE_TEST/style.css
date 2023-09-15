@@ -1,0 +1,14 @@
+.hello{
+    background-color: rebeccapurple;
+    position:sticky;
+}
+
+.but{
+    position:  relative;
+    top: 30px;
+    left:500px;
+}
+
+body {
+    background-color: aquamarine;
+}
