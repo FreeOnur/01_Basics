@@ -1,10 +1,24 @@
 .cont {
    background-color: yellow;
+   height: 150px;
+   display: flex;
+   flex-direction: row-reverse;
+   position: relative;
    
 }
 .box {
     background-color: rgb(255, 72, 0);
-    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    top: 50px;
+    right: 0px;
+
+
+    
 }
 
 
