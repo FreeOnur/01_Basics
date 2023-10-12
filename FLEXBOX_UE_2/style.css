@@ -43,6 +43,18 @@
 	padding-left: 100px;
 	position: relative;
 	top: 370px;
+	display: flex;
+	
+align-items: center;
+	justify-content: center;
+}
+
+.miniboxes {
+	background-color: rgb(61, 128, 244);
+	height: 50px;
+	width: 50px;
+	margin: 30px
+	
 }
 
 
