@@ -44,6 +44,28 @@ border-width: 1px;
     border-bottom-width: 1px;
 }
 
+.greybox {
+    background-color: rgba(128, 128, 128, 0.476);
+    width: 250px;
+    height: 250px;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orangebox {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
 
 
 
