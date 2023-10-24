@@ -4,7 +4,40 @@
     margin: 100px;
     height: 700px;
     width: 1200px;
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
 }
+.container1 {
+    background-color: antiquewhite;
+    height: 700px;
+    width: 600px;
+    border-style: solid;
+    border-right-width: 3px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 20% 20% 20%;
+    justify-content: center;
+   
+
+}
+.container2 {
+    background-color: rgb(235, 135, 5);
+    height: 700px;
+    width: 600px;
+    justify-content: right;
+
+}
+.miniboxes {
+    background-color: green;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    top: 190px;
+}
+
 
 
 
