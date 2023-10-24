@@ -22,7 +22,11 @@
     grid-column-end: span 2;
 }
 
-
+@media (min-width: 900px) {
+	body {
+		background-color: blue;
+	}
+}
 
 
 
