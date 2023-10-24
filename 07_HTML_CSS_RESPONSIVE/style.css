@@ -5,7 +5,7 @@
 }
 .container{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, auto);
     column-gap: 1px;
     row-gap: 1px;
@@ -25,6 +25,13 @@
 @media (min-width: 900px) {
 	body {
 		background-color: blue;
+	}
+	.container{
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-auto-rows: minmax(100px, auto);
+		column-gap: 1px;
+		row-gap: 1px;
 	}
 }
 
