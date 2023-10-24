@@ -1,6 +1,7 @@
 .container {
+    background-color: rgb(117, 117, 229);
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: 100px;
     width: 1000px;
     border-style: solid;
@@ -19,7 +20,67 @@
     border-width: 1px;
     margin: 9px;
 }
+.box1 {
+    height: 500px;
+    width: 500px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: bisque;
+    position: absolute;
+    left: 30px;
+    margin-top: 40px;
+}
+.box2 {
+    height: 500px;
+    width: 500px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: bisque;
+    margin-top: 40px;
+    position: absolute;
+    right: 500px;
+}
 
+@media (max-width: 800px) {    
+    
+    .container {
+        display: grid;
+        grid-template-rows: 100% 100% 100%;
+        background-color: white;
+        border-style: none;
+    }
+    .box1 {
+        height: 300px;
+        width: 300px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: bisque;
+        position: relative;
+        top: 190px;
+        
+    }
+    .box2 {
+        height: 300px;
+        width: 300px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: bisque;
+        margin-top: 290px;
+        position:absolute;
+        left: 30px
+        
+    }
+    
+
+    .boxes {
+        background-color: rgb(0, 221, 255);
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-width: 1px;
+    
+    }
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
