@@ -1,3 +1,24 @@
+.container {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100px;
+    width: 1000px;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.boxes {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 9px;
+}
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
