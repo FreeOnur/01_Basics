@@ -2,3 +2,39 @@ div {
     height: 50px;
     background-color: red;
 }
+
+.container {
+    width: 50%;
+}
+
+.container2{
+    width: 100vw;
+    height: 100vh;
+}
+.container3{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+.container4{
+    width: 30vw;
+    height: 40vh;
+    background-color: green;
+}
+.container5{
+    width: 30vw;
+    height: 10vh;
+}
+
+
+
+.main {
+    background-color: green;
+
+    height: 200px;
+    width: 200px;
+}
+
+* {
+    margin: 0px;
+}
