@@ -1,0 +1,27 @@
+
+.main {
+    background-color: green;
+
+    height: 200px;
+    width: 200px;
+}
+
+* {
+    margin: 0px;
+    font-size: 20px;
+}
+
+div {
+    height: 50px;
+    background-color: red;
+}
+
+.container {
+    width: 50%;
+    font-size: 2rem; /*route    rem verdopelt die Standardgröße sozusagen*/
+}
+
+.container2{
+    width: 100vw;
+    height: 100vh;
+}
