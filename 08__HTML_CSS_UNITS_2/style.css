@@ -1,14 +1,14 @@
 
 .main {
     background-color: green;
-
+    font-size: 1.5rem;
     height: 200px;
     width: 200px;
 }
 
 * {
     margin: 0px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 div {
@@ -18,10 +18,11 @@ div {
 
 .container {
     width: 50%;
-    font-size: 2rem; /*route    rem verdopelt die Standardgröße sozusagen*/
+    font-size: 1rem; /*route    rem verdopelt die Standardgröße sozusagen*/
 }
 
 .container2{
     width: 100vw;
     height: 100vh;
+    font-size: 0.3rem;
 }
