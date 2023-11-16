@@ -7,16 +7,21 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-
+    padding: 20px;
+    
 }
 
-.container div {
+.box {
+    background-color: black;
     height: 30px;
     width: 30px;
-    background-color: black;
 }
 
-
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
 
 .greenbox {
     height: 300px;
@@ -28,8 +33,8 @@
 }
 
 .lilabox {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     right: 0px;
     bottom: 0px;
