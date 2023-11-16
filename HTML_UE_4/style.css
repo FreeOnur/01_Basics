@@ -6,7 +6,7 @@
     left: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 
 }
 
@@ -16,9 +16,24 @@
     background-color: black;
 }
 
-.container .box1 {
-    display: flex;
 
+
+.greenbox {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lilabox {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: violet;
 }
 
 
