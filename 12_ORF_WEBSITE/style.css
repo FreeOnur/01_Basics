@@ -5,10 +5,20 @@
 
 .container_header {
     background-color: red;
-
+	height: 200px;
 }
 
+.choosingbar {
+	background-color: rgb(141, 13, 13);
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	
+}
 
+li {
+	display: inline-block;
+}
 
 
 
