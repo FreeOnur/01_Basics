@@ -1,8 +1,25 @@
+.container {
+    background-color: aqua;
+    height: 200px;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
 
+.container div {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
 
+.container .box1 {
+    display: flex;
 
-
+}
 
 
 
