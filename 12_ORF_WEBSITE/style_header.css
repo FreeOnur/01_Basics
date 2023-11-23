@@ -6,9 +6,11 @@
 
 .container_header {
     background-color: rgb(214, 19, 19);
-	height: 200px;
+	height: 170px;
 	width: 1000px;
 	display: flex;
+	position: relative;
+	left: 100px;
 }
 
 .choosingbar {
@@ -33,11 +35,19 @@
 }
 
 .choosingbar li {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
     font-feature-settings: "liga", "kern";
 	
 }
+
+.choosingbar li:hover {
+	color: rgba(255, 255, 255, 0.531);
+	cursor:pointer;
+	text-decoration: underline;
+  	text-underline-position: auto;
+}
+
 
 
 
@@ -48,13 +58,13 @@
 .img_orf_bar {
 	height: 50px;
 	position: relative;
-	top: 60px;
+	top: 50px;
 	left: 160px;
 }
 
 .vrlbrg {
 position: relative;
-top: 18px;
+top: 8px;
 left: 25px;
 font-size: 30px;
 color: white;
@@ -67,14 +77,37 @@ font-feature-settings: "liga", "kern";
 	background-color: rgb(81, 9, 9);
 	height: 40px;
 	width: 1000px;
+	position: relative;
+	left: 100px;
+	
 }
+
 
 body {
-	background-color: rgb(191, 187, 187);
+	background-color: rgb(183, 175, 175);
 }
 
+.lowerheader li {
+	color: white;
+	font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+	margin-top: 10px;
+	font-size: 18px;
+}
 
+.lowerheader ul {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 18px;
+    padding: 0;
+    height: 29px;
+    outline: none;
+}
 
+.lowerheader ul:hover {
+	cursor:pointer;
+}
  
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
