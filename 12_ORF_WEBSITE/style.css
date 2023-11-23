@@ -69,6 +69,10 @@ font-feature-settings: "liga", "kern";
 	width: 1000px;
 }
 
+body {
+	background-color: rgb(191, 187, 187);
+}
+
 
 
  
