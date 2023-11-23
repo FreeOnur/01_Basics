@@ -1,27 +1,46 @@
 * {
     font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
-    font-feature-settings: "liga", "kern"
+    font-feature-settings: "liga", "kern";
+	
 }
 
 .container_header {
     background-color: red;
 	height: 200px;
+	width: 1000px;
 }
 
 .choosingbar {
 	background-color: rgb(141, 13, 13);
 	height: 30px;
-	display: flex;
-	justify-content: space-between;
+	width: 1000px;
+	
+	
 	
 }
 
-li {
-	display: inline-block;
+.choosingbar ul{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 18px;
+    padding: 0;
+    height: 29px;
+    outline: none;
+	
+
 }
 
+.choosingbar li {
+	color: white;
+	font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+	
+}
 
-
+.orf {
+	margin-left: 20px;
+}
 
 
 
