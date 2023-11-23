@@ -8,6 +8,7 @@
     background-color: rgb(214, 19, 19);
 	height: 200px;
 	width: 1000px;
+	display: flex;
 }
 
 .choosingbar {
@@ -46,13 +47,31 @@
 
 .img_orf_bar {
 	height: 50px;
-	  
-	   
+	position: relative;
+	top: 60px;
+	left: 160px;
+}
+
+.vrlbrg {
+position: relative;
+top: 18px;
+left: 25px;
+font-size: 30px;
+color: white;
+
+font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+font-feature-settings: "liga", "kern";
+}
+
+.lowerheader {
+	background-color: rgb(81, 9, 9);
+	height: 40px;
+	width: 1000px;
 }
 
 
 
-
+ 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
