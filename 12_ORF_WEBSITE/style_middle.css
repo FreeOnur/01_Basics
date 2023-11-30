@@ -42,3 +42,12 @@ top: -10px;
     left: 50px;
 
 }
+
+
+.untertitel {
+    font-family: "ORF Universal Condensed","Avenir Next Condensed","Arial Narrow","Roboto Condensed",sans-serif-condensed,"ORF Fallback Roboto Condensed";
+    font-weight: 600;
+    position: relative;
+    top: 60px;
+    line-height: 1.5;
+}
