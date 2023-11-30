@@ -3,3 +3,42 @@ position: relative;
 left: 100px;
 top: 10px;
 }
+
+.white_back {
+width: 1000px;
+height: 1000px;
+background-color: white;
+position: relative;
+left: 100px;
+top: -10px;
+}
+
+.textfeld {
+    width: 600px;
+    height: 1000px;
+    background-color: white;
+    position: relative;
+    top: -80px;
+    left: 175px;
+}
+
+
+.Übertitel {
+    margin: 20px;
+    padding-top: 20px;
+    color: #7a7b80;
+    font-family: "ORF Universal SC","ORF Fallback SC",sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.title {
+
+    font-family: "ORF Universal Condensed","Avenir Next Condensed","Arial Narrow","Roboto Condensed",sans-serif-condensed,"ORF Fallback Roboto Condensed";
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left: 50px;
+
+}
