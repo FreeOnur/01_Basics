@@ -36,5 +36,11 @@ console.log("c -a + b = " + result_3);
 console.log("a + b + c *3 = " + result_4);
 console.log("(a + b + c)/4 = " + result_5);
 
+a = 3;
+b = a + 3;
+c = c - 3;
+
+
+console.log("The new value for a =" + a, "The new value for b =" + b, "The new value for c =" + c);
 
 
