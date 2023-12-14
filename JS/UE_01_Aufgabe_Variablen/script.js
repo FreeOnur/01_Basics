@@ -18,8 +18,18 @@ let bananenAnzahl = 1 / bananengewicht;
 
 console.log("Mann kann " + apfelAnzahl+ " Äpfel pro Kilo kaufen"); 
 console.log("Mann kann " + bananenAnzahl + " Bananen pro Kilo kaufen"); 
-let umform
+
+
+let apfelPricePer =  applePricePerKilo/apfelAnzahl;
+let bananenPricePer =  bananaPricePerKilo/bananenAnzahl;
+
+console.log("1 Banane kostet " + bananenPricePer);
+console.log("1 Apfel kostet " + apfelPricePer);
 // Preis von 8 Äpfeln
+console.log("8 Äpfel kosten " + 8*apfelPricePer);
 // Preis von 17 Bananen
+console.log("17 Bananen kosten " + 17*bananenPricePer);
 // Preis von 1 Tonne Äpfel
+console.log("1 Tonne Apfel sind " + applePricePerKilo*1000)
 // Preis von 1 Tonne Bananen
+onsole.log("1 Tonne Bananen sind " + bananaPricePerKilo*1000)
