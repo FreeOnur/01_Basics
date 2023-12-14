@@ -27,3 +27,12 @@ if(number<20) {
 // Wenn die Zahl kleiner gleich 7 ist gib aus "Mini"
 // Wenn die Zahl zwischen 7 und 90 ist gib  aus "Medium"
 // Wenn die Zahl größer als 90 ist gib aus "Large"
+let number2 = 90;
+
+if(number2<=7) {
+    console.log("Mini")
+}else if(number2<90) {
+    console.log("Medium")
+}else{
+    console.log("Large")
+}
