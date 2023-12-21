@@ -12,3 +12,17 @@
 //X            X
 //X            X
 
+for (let index = 0; index<2; index++) {
+    console.log("x x x x");
+    if(index%1==0)
+    console.log("O O O O")
+    
+}
+
+
+for (let i = 0; i <=100; index++) {
+
+    if (i%2==100) {
+        
+    }
+}
