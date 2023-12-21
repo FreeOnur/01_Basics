@@ -28,3 +28,6 @@ if((randomZahl1<30)&&(randomZahl2<30)) {
 
 // Wenn die erste Zahl kleiner ist als 50 UND die zweite Zahl ungleich 50 ist
 // dann gib aus "Erste Zahl klein, zweite kein 50iger"
+if((randomZahl1<50)&&(randomZahl2!=50)) {
+    console.log("Erste Zahl klein, zweite kein 50iger");
+}
