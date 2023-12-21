@@ -5,3 +5,5 @@
 //ls                     Zeigt alle Files im aktuellen Directory
 //cd J (TAB)             Schlägt den passenden Ordner vor
 //Pfeil oben
+
+console.log("Hello World")
