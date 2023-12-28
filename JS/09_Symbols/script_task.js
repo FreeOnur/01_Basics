@@ -22,21 +22,22 @@ for(let d = 1; d <= reihen; d++) {
     let Output = "";
     if (d==6 || d==1) {
         Output += " "
-    }
-    for(let f = 5; f <= zeilen; f++ ) {
-        if(d ==6 || d==1) {
+    
+    for(let f = 2; f <= 6; f++ ) {
+        
             Output += "X";
-        }
+       
     }
-
-    for(s = 1; s<= zeilen ; s++) {
-        if(s==1 || s==6) {
-            Output += "X"
-
-        } else if(s==2||s==3||s==4|| s==5) {
-            Output+=" "
+    Output += " ";
+    } else{
+        Output += "X";
+        for (let f = 2; f <= 6; f++) {
+            Output += " ";
+            
         }
+        Output+= "X";
     }
+    
     console.log(Output);
     
 }
