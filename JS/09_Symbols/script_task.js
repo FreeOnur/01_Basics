@@ -11,13 +11,25 @@
 //X    X X   X 
 //X            X
 //X            X
+const rows = 4;
+const zeilen = 4;
 
-for (let index = 0; index<2; index++) {
-    console.log("x x x x");
-    if(index%1==0)
-    console.log("O O O O")
+for (let i = 1; i <= rows; i++) {
+    let rowOutput = "";
+
+    for (let j = 1; j <= zeilen; j++) {
+        if (i % 2 == 0) {
+            
+            rowOutput += "O ";
+        } else {
     
+            rowOutput += "X ";
+        }
+    }
+
+    console.log(rowOutput);
 }
+
 
 nul = 0
 for (let i = 0; i <=100; i++) {
