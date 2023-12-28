@@ -19,10 +19,13 @@ for (let index = 0; index<2; index++) {
     
 }
 
+nul = 0
+for (let i = 0; i <=100; i++) {
 
-for (let i = 0; i <=100; index++) {
-
-    if (i%2==100) {
+    if (i%2==0) {
+        nul+=i
         
     }
 }
+console.log("Die Summe aller Geraden 0-100 ist " + nul);
+
