@@ -27,6 +27,12 @@ for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
     
 }
+let sum = 0;
 //b Zähle alle Werte zusammen und gib das Ergebnis aus
-
+for(let i = 0; i<array.length; i++){
+    
+    sum += array[i];
+    
+}
+console.log(sum);
 //c Berechne den Mittelwert der Zahlen und gib das Ergebnis aus
