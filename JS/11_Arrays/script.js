@@ -34,5 +34,10 @@ for(let i = 0; i<array.length; i++){
     sum += array[i];
     
 }
+
+
 console.log(sum);
 //c Berechne den Mittelwert der Zahlen und gib das Ergebnis aus
+let arrayanzahl = array.length;
+let durchschnitt = sum/arrayanzahl;
+console.log(durchschnitt);
