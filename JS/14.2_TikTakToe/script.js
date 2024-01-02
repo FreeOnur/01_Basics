@@ -7,10 +7,12 @@ let field = [
 
 for (let row = 0; row < field.length; row++) {
     let actualRow = field[row];
-    for (let col = 0; col < field.length; col++) {
-        console.log(actualRow[col]);
+    let output = "";
+    for (let col = 0; col < actualRow.length; col++) {
+        
+        output += actualRow[col] + " ";
         
     }
    
-    
+    console.log(output);
 }
