@@ -25,6 +25,7 @@ console.log("4. Ende");
 let userBasicStand = 0;
 while(bankautomat){
 let userFirstInput = await readLineAsync();
+
 switch(userFirstInput) {
     case "1":
     console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:");
@@ -41,6 +42,11 @@ switch(userFirstInput) {
         userBasicStand -= userAuszahlenInput;
         break;
     case "3":
-        console.log(userBasicStand);
+        console.log("Ihr Kontostand beträgt: " + userBasicStand);
+        break;
+    
+    case "4":
+        console.log("Die Maschine wird beendet!");
+
 }
 }
