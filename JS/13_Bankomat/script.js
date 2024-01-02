@@ -49,6 +49,7 @@ switch(userFirstInput) {
         break;
     
     case "4":
+        bankautomat = false;
         console.log("Die Maschine wird beendet!");
         break;
 
