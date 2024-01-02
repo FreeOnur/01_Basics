@@ -7,8 +7,11 @@ let field = [
 
 
 field[0][1] = 1;
-field[1][1] = 2;
+field[0][0] = 1;
+field[0][2] = 1;
 
+field[1][1] = 2;
+checkWinner();
 printField();
 function printField(){
     
@@ -19,6 +22,7 @@ function printField(){
         let output = "";
         for (let col = 0; col < actualRow.length; col++) {
             let sign = " ";
+            
             if(actualRow[col]==1) {
                 sign = "X";
 
@@ -36,3 +40,17 @@ function printField(){
     
     
 }
+//field[x][y]
+for(let i=0; i <3; i++ ){
+    if(field[0][i] && field[0][i] === field[1][i] && field[1][i] === field[2][i]&&field[2][i] ){
+        console.log("Spieler " + field[1][i] + "hat gewonnen");
+    }
+    if(field[i][0] && field [i][0] === field[i][1] && field[i][1]===field[i][2] && field[i][2]) {
+        console.log("Spieler " + field[i][1] + "hat gewonnen");
+    }
+}
+
+
+   // [0,0,0],
+   // [0,0,0],
+   // [0,0,0]
