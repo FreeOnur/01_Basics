@@ -4,4 +4,8 @@ let field = [
     [0,0,0]
 ];
 
-console.log(field[1] [1]);
+
+for (let index = 0; index < field.length; index++) {
+    console.log(field[index])
+    
+}
