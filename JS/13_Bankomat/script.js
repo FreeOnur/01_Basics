@@ -23,7 +23,7 @@ console.log("2. Abheben");
 console.log("3. Kontostand");
 console.log("4. Ende");
 let userBasicStand = 0;
-
+while(bankautomat){
 let userFirstInput = await readLineAsync();
 switch(userFirstInput) {
     case "1":
@@ -37,7 +37,10 @@ switch(userFirstInput) {
     case "2":
         console.log("Geben Sie den Betrag ein den Sie auszahlen möchten:");
         let userAuszahlenInput = await readLineAsync();
-        console.log("Sie haben" + userAuszahlenInput + "€ ausgezahlt");
+        console.log("Sie haben " + userAuszahlenInput + "€ ausgezahlt");
         userBasicStand -= userAuszahlenInput;
         break;
+    case "3":
+        console.log(userBasicStand);
+}
 }
