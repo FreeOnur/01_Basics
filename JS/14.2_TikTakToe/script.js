@@ -5,7 +5,12 @@ let field = [
 ];
 
 
-for (let index = 0; index < field.length; index++) {
-    console.log(field[index])
+for (let row = 0; row < field.length; row++) {
+    let actualRow = field[row];
+    for (let col = 0; col < field.length; col++) {
+        console.log(actualRow[col]);
+        
+    }
+   
     
 }
