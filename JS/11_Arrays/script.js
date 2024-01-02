@@ -41,3 +41,16 @@ console.log(sum);
 let arrayanzahl = array.length;
 let durchschnitt = sum/arrayanzahl;
 console.log(durchschnitt);
+
+//Erstelle ein Array mit folgenden Strings:
+//"Susi", "Paula", "Hans"
+let namen = ["Susi", "Paula", "Hans"];
+
+//Gib folgenden Satz aus:
+//"Meine Freunde sind Susi, Paula und Hans
+console.log("Meine Freunde sind " + namen[0]+", " + namen[1] + " und " + namen[2]);
+
+//Füge "Sepp" dazu. Nun soll die ausgabe folgendermaßen lauten:
+namen.push("Sepp");
+//"Meine Freunde sind Susi, Paula, Hans und Sepp"
+console.log("Meine Freunde sind " + namen[0]+", " + namen[1]  + ", " + namen[2] + " und " +  namen[3]);
