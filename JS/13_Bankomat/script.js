@@ -32,12 +32,15 @@ switch(userFirstInput) {
     let userEinzahlenInput = await readLineAsync();
     console.log("Sie haben " + userEinzahlenInput + "€ eingezahlt");
     userBasicStand += parseFloat(userEinzahlenInput);
-    console.log(userBasicStand);
+    
 
     break;
     case "2":
         console.log("Geben Sie den Betrag ein den Sie auszahlen möchten:");
         let userAuszahlenInput = await readLineAsync();
+        if(userAuszahlenInput > userBasicStand) {
+            console.log("Auf ihrem Konto ist zu wenig Geld.")
+        }
         console.log("Sie haben " + userAuszahlenInput + "€ ausgezahlt");
         userBasicStand -= userAuszahlenInput;
         break;
@@ -47,6 +50,7 @@ switch(userFirstInput) {
     
     case "4":
         console.log("Die Maschine wird beendet!");
+        break;
 
 }
 }
