@@ -1,19 +1,21 @@
 import { createInterface } from "readline";
 
-const readline = createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
 const readLineAsync = () => {
+    const readline = createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    });
     return new Promise((resolve) => {
         readline.question("", (userRes) => {
-            resolve(userRes);
             readline.close();
+            resolve(userRes);
+            
             
         });
     });
+    
 };
+
 
 console.log("1. Einzahlen");
 console.log("2. Abheben");
@@ -24,6 +26,7 @@ if(userFirstInput == 1) {
     console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:");
     let userEinzahlenInput = await readLineAsync();
     console.log("Sie haben " + userEinzahlenInput + "€ eingezahlt");
+    
     
 }
 if(userFirstInput == 2) {
