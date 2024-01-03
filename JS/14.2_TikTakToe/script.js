@@ -41,13 +41,23 @@ function printField(){
     
 }
 //field[x][y]
+
+function checkWinner(){
 for(let i=0; i <3; i++ ){
     if(field[0][i] && field[0][i] === field[1][i] && field[1][i] === field[2][i]&&field[2][i] ){
-        console.log("Spieler " + field[1][i] + "hat gewonnen");
+        console.log("Spieler " + field[1][i] + " hat gewonnen");
     }
     if(field[i][0] && field [i][0] === field[i][1] && field[i][1]===field[i][2] && field[i][2]) {
-        console.log("Spieler " + field[i][1] + "hat gewonnen");
+        console.log("Spieler " + field[i][1] + " hat gewonnen");
     }
+    if(field[0][0] && field[0][0] === field[1][1] && field[1][1] === field[2][2]&&field[2][2] ){
+        console.log("Spieler " + field[1][1] + " hat gewonnen");
+    }
+    if(field[0][2] && field [0][2] === field[1][1] && field[1][1]===field[2][0] && field[2][0]) {
+        console.log("Spieler " + field[1][1] + " hat gewonnen");
+    }
+    
+} 
 }
 
 
