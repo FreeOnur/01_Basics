@@ -7,8 +7,8 @@ let output = document.getElementById("output");
 let ZahlX = parseInt(x)
 let ZahlY = parseInt(y)
 
-
-let random = Math.random()* ZahlY + ZahlX;
+let wirklichZahl = ZahlY-ZahlX;
+let random = Math.random()* wirklichZahl + ZahlX;
 console.log(Math.floor(random));
 output.innerHTML = Math.floor(random);
 

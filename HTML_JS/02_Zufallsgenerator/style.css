@@ -4,6 +4,7 @@
     
     position: relative;
     left: 350px;
+    top: 20px;
     width: 70vh;
     height: 70vh;
     display: grid;
@@ -26,11 +27,7 @@
 
 
 
-button {
-    width: 346px;
-    
 
-}
 
 .output {
     width: 346px;
@@ -38,6 +35,48 @@ button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100px;
 }
+
+.butcont {
+    display: flex;
+    justify-content: center
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+button{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #516a82;
+padding: 10px 30px;
+border: solid #81bdfa 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 52ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+button:hover{
+
+transition : 52ms;
+padding: 10px 52px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+
+
+
 
 
 
