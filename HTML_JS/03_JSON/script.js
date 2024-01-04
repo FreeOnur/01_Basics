@@ -19,5 +19,4 @@ function loadPeople() {
     document.getElementById("content").innerHTML = html;
 
 }
-
 loadPeople();
