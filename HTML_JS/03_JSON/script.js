@@ -8,19 +8,16 @@ let data = [
 
 
 
-for (let index = 0; index < data.length; index++) {
-    const element = data[index];
-    console.log(element.firstName);
-    
-}
-
-data.forEach(element => {
-    console.log(element.lastName);
-})
 function loadPeople() {
+    let html ="";
 
-
-
-
+    data.forEach(element => {
+    html += "<div>" + element.firstName + "" + element.lastName + "</div>"
+    
+    })
+    console.log(html);
+    document.getElementById("content").innerHTML = html;
 
 }
+
+loadPeople();
