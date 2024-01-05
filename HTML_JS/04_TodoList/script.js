@@ -4,10 +4,22 @@ let todos = [
     {id:3, title:"einkaufen", isDone:false},
     {id:4, title:"lernen", isDone:false}
 ];
+let maxId = 4;
 
-let html = "";
-todos.forEach((element) => {
-    html+="<div>" + element.title + " - " + element.isDone + "</div>";
-    
-});
-document.getElementById("todos").innerHTML = html;
+document.getElementById("input").addEventListener("change", function(event) {
+    todos.push({id:maxId, title:event.target.value, isDone: false})
+    maxId++;
+    printTasks();
+    event.target.value = ""
+})
+function printTasks() {
+    let html = "";
+    todos.forEach((element) => {
+        html+="<div>" + element.title + " - " + element.isDone + "</div>";
+        
+    });
+
+    document.getElementById("todos").innerHTML = html;
+}
+
+printTasks();
