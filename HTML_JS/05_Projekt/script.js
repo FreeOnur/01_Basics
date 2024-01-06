@@ -76,3 +76,25 @@ let numbers = [
     {letter: "0"}
 
 ]
+
+let zeichen = [
+    {zeichen: "!"},
+    {zeichen: "#"},
+    {zeichen: ";"},
+    {zeichen: "_"},
+    {zeichen: "-"},
+    {zeichen: "*"},
+    {zeichen: "+"},
+    {zeichen: "-"},
+    {zeichen: "."},
+    {zeichen: "°"},
+    {zeichen: "^"},
+    {zeichen: "%"},
+    {zeichen: "$"},
+    {zeichen: "§"},
+    {zeichen: "&"},
+    {zeichen: "="},
+    {zeichen: "/"}
+]
+
+
