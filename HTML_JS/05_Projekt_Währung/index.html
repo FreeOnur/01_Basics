@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Währungsumrechner</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" class="input" id="input">
+    <select name="währung1" id="währung1">
+        <option value="€">Euro</option>
+    </select>
+    <select name="währung2" id="währung2">
+        <option value="1">U.S. dollar (US$)</option>
+        <option value="2">Euro (€)</option>
+        <option value="3">Japanese yen (¥ / 円)</option>
+        <option value="4">Sterling (£)</option>
+        <option value="5">Renminbi (¥ / 元)</option>
+        <option value="6">Australian dollar (A$)</option>
+        <option value="7">Canadian dollar (C$)</option>
+        <option value="8">Swiss franc (CHF)</option>
+        <option value="9">Hong Kong dollar (HK$)</option>
+        <option value="10">Singapore dollar (S$)</option>
+        <option value="11">Swedish krona (kr)</option>
+        <option value="12">South Korean won (₩ / 원)</option>
+        <option value="13">Norwegian krone (kr)</option>
+        <option value="14">New Zealand dollar (NZ$)</option>
+        <option value="15">Indian rupee (₹)</option>
+        <option value="16">Mexican peso (MXN$)</option>
+        <option value="17">New Taiwan dollar (NT$)</option>
+        <option value="18">South African rand (R)</option>
+        <option value="19">Brazilian real (R$)</option>
+        <option value="20">Danish krone (kr)</option>
+        <option value="21">Polish złoty (zł)</option>
+        <option value="22">Thai baht (฿)</option>
+        <option value="23">Israeli new shekel (₪)</option>
+        <option value="24">Indonesian rupiah (Rp)</option>
+        <option value="25">Czech koruna (Kč)</option>
+        <option value="26">UAE dirham (د.إ)</option>
+        <option value="27">Turkish lira (₺)</option>
+        <option value="28">Hungarian forint (Ft)</option>
+        <option value="29">Chilean peso (CLP$)</option>
+        <option value="30">Saudi riyal (﷼)</option>
+        <option value="31">Philippine peso (₱)</option>
+        <option value="32">Malaysian ringgit (RM)</option>
+        <option value="33">Colombian peso (COL$)</option>
+        <option value="34">Russian ruble (₽)</option>
+        <option value="35">Romanian leu (L)</option>
+        <option value="36">Peruvian sol (S/)</option>
+        <option value="37">Bahraini dinar (.د.ب)</option>
+        <option value="38">Bulgarian lev (BGN)</option>
+        <option value="39">Argentine peso (ARG$)</option>
+    </select>
+    <button onclick="suchen()" class="submit" id="submit">Berechnen</button>
+    <div class="output"></div>
+</body>
+</html>
