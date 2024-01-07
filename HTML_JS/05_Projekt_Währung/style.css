@@ -1,0 +1,70 @@
+.output {
+    font-size: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 160px;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#währung1 {
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 63.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #7a7a7a;
+}
+#währung2 {
+    padding: 10px;
+    position: absolute;
+    top: 35%;
+    left: 67.9%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: #7a7a7a;
+}
+
+.submit {
+    position: absolute;
+    
+    font-size: 20px;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%); 
+}
+.submit {
+    width: 270px;
+    height: 50px;
+    font-size: 27px;
+    color: #000000;
+    background: linear-gradient(to top, #6d7871, #a1a1a1);
+    border: 2px solid #1b1c1b;
+    border-radius: 10px;
+    font-family: arial;
+    transition: all 0.25s ease;
+}
+.submit:hover {
+    color: #000000;
+    background: linear-gradient(to top right, #7a7575, #999090);
+    border-color: none;
+}
+.input {
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%); 
+}
+
+body {
+    background-color: rgb(58, 57, 57);
+}
