@@ -14,14 +14,14 @@ function ausgabe() {
 
     let input = magic(größe, gewicht)
     if(input > 0) {
-        document.getElementById("output").innerHTML = "Positiv";
+        document.getElementById("output").innerHTML = "Positiv ";
         for(let i = 0; input >=i; i++) {
-            document.getElementById("output").innerHTML = i;
+            document.getElementById("output").innerHTML +=i+ ",";
         }
     } else if ( input < 0) {
-        document.getElementById("output").innerHTML = "Negativ";
+        document.getElementById("output").innerHTML = "Negativ ";
         for(let i = 0; input <= i; i--) {
-            document.getElementById("output").innerHTML = i;
+            document.getElementById("output").innerHTML += i + ",";
         }
     }
 }
