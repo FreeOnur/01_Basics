@@ -9,7 +9,7 @@ const loadData = () => {
 
 const getInfos = (data) => {
     data.forEach(element => {
-        html += "<ul> <il>" + element.points + "</il> </ul>"
+        html += "<ul> <li>" + element.points + "</li> </ul>"
     });
 
     document.getElementById("output").innerHTML = html;
