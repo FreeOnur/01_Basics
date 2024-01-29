@@ -10,9 +10,10 @@ const loadData = () => {
 const getInfos = (data) => {
     let html = "";
     data.forEach(element => {
-        html += "<div>" + element.teamName + "</div>"
+        html += "<table><tr><td>" + element.teamName + " </td> <td> hallo </td></tr> " + "<tr> <th>"+ element.goals +"</th> </tr> </table>"
     });
-
+    
+    
     document.getElementById("output").innerHTML = html;
 }
 loadData()
