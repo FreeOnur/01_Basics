@@ -1,5 +1,37 @@
+.years{
+  
+    width: 780px;
+    height: 95px;
+    background-color: #757575;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.years:hover{
+    cursor:grab;
+}
+.table{
+    width: 780px;
+    height: 95px;
+    background-color: #656565;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
+}
+body{
+    width: 100%;
+}
+.slidebar{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+}
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -50,3 +82,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
