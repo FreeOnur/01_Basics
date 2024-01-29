@@ -8,9 +8,11 @@ const loadData = () => {
 }
 
 const getInfos = (data) => {
+    let html = "";
     data.forEach(element => {
-        html += "<ul> <li>" + element.points + "</li> </ul>"
+        html += "<div>" + element.teamName + "</div>"
     });
 
     document.getElementById("output").innerHTML = html;
 }
+loadData()
