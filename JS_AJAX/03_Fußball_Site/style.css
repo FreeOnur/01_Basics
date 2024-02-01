@@ -23,6 +23,9 @@
     align-items: center;
 
 }
+.background {
+    width: 1550px;
+}
 body{
     width: 100%;
 }

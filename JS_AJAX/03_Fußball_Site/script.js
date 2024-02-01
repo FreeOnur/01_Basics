@@ -17,3 +17,4 @@ const getInfos = (data) => {
     document.getElementById("output").innerHTML = html;
 }
 loadData()
+
