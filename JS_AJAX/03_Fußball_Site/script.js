@@ -1,10 +1,4 @@
 let jahreId = [
-    {id:2002, value:"2002"},
-    {id:2003, value:"2003"},
-    {id:2004, value:"2004"},
-    {id:2005, value:"2005"},
-    {id:2006, value:"2006"},
-    {id:2007, value:"2007"},
     {id:2008, value:"2008"},
     {id:2009, value:"2009"},
     {id:2010, value:"2010"},
@@ -20,7 +14,7 @@ let jahreId = [
     {id:2020, value:"2020"},
     {id:2021, value:"2021"},
     {id:2022, value:"2022"},
-    {id:2023, value:"2023"},
+    {id:2023, value:"2023"}
 ]
 
 
