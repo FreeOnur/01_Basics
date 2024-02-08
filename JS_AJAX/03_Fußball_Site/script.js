@@ -1,4 +1,4 @@
-let jahre = [
+let jahreId = [
     {id:2002, value:"2002"},
     {id:2003, value:"2003"},
     {id:2004, value:"2004"},
@@ -22,11 +22,14 @@ let jahre = [
     {id:2022, value:"2022"},
     {id:2023, value:"2023"},
 ]
-const loadData = () => {
-    let jahre = document.getElementById("year").value
-    let jahreId = 
 
-    fetch("https://api.openligadb.de/getbltable/bl1/2023").then((result) => {
+
+const loadData = () => {
+    let years = parseInt(document.getElementById("year").value);
+let jahreIds = jahreId.find(jahre => jahre.id === years) 
+let jahreReal = jahreIds.value
+
+    fetch("https://api.openligadb.de/getbltable/bl1/" + jahreReal).then((result) => {
         result.json().then((data) => {
             getInfos(data);
 
@@ -45,3 +48,4 @@ const getInfos = (data) => {
 }
 loadData()
 
+console.log("https://api.openligadb.de/getbltable/bl1/" + jahreReal)
