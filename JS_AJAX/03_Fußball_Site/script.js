@@ -38,8 +38,7 @@ const getInfos = (data) => {
     });
     
     
-    document.getElementById("output").innerHTML = html;
+    document.getElementById("tabelle").innerHTML = html;
 }
 loadData()
 
-console.log("https://api.openligadb.de/getbltable/bl1/" + jahreReal)
