@@ -22,9 +22,9 @@ const loadData = () => {
     let years = parseInt(document.getElementById("year").value);
 let jahreIds = jahreId.find(jahre => jahre.id === years) 
 let jahreReal = jahreIds.value
+let bl = document.getElementById("bl").value;
 
-
-    fetch("https://api.openligadb.de/getbltable/bl1/" + jahreReal).then((result) => {
+    fetch("https://api.openligadb.de/getbltable/"+bl+"/" + jahreReal).then((result) => {
         result.json().then((data) => {
             getInfos(data);
 
