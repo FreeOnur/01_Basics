@@ -34,11 +34,11 @@ let jahreReal = jahreIds.value
 const getInfos = (data) => {
     let html = "";
     data.forEach(element => {
-        html += "<table><tr><td>" + element.shortName + " </td></tr> " + "<tr> <th>"+ element.goals +"</th> </tr> </table>"
+        html += "<div class='tableTeamName'>" + element.shortName + " </div> " + "<div class='tableGoals'>"+ element.goals +"</div>"
     });
     
     
-    document.getElementById("tabelle").innerHTML = html;
+    document.getElementById("output").innerHTML = "<div class=überschriften><div class='table1'>Bundesland</div>"+"<div class='table2'>Spiele</div>"+"<div class='table3'>Tore</div>"+"<div class='table4'>Matches</div></div>"+ html;
 }
 loadData()
 

@@ -40,38 +40,19 @@
 .background .border {
     border-style: solid;
     border-width: 2px;
+    height: 800px;
+    width: 850px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    background-color: grey;
     
 }
-.tabelle {
-    border-style: solid;
-    border-width: 2px;
-    border-collapse: collapse;
-    position:absolute;
-    top:290px;
-    
-    
+.überschriften {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
-.tabelle td {
-    border-style: solid;
-    border-width: 2px;
-    position: absolute;
-    left:29px;
-    
-    
-    
-}
-.tabelle tr, td {
-    width: 100px;
-    border-collapse: collapse;
-    
-}
-.tabelle tr {
-    border-style: solid;
-    border-width: 2px;
-    
-    
-}
 
 body{
     width: 100%;
