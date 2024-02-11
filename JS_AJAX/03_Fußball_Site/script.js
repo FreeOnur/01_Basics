@@ -23,6 +23,7 @@ const loadData = () => {
 let jahreIds = jahreId.find(jahre => jahre.id === years) 
 let jahreReal = jahreIds.value
 
+
     fetch("https://api.openligadb.de/getbltable/bl1/" + jahreReal).then((result) => {
         result.json().then((data) => {
             getInfos(data);
@@ -34,11 +35,11 @@ let jahreReal = jahreIds.value
 const getInfos = (data) => {
     let html = "";
     data.forEach(element => {
-        html += "<div class='tableTeamName'>" + element.shortName + " </div> " + "<div class='tableGoals'>"+ element.goals +"</div>"
+        html += "<div class='tableTeamName'>" + element.goals + " </div> " + "<div class='tableGoals'>"+ element.shortName +"</div>" + "<div class='tableWins'>"+ element.won +"</div>" + "<div class='tableLost'>"+ element.lost +"</div>"+ "<div class='tableDraw'>"+ element.draw +"</div>"+ "<div class='tableMatches'>"+ element.matches +"</div>"
     });
     
     
-    document.getElementById("output").innerHTML = "<div class=überschriften><div class='table1'>Bundesland</div>"+"<div class='table2'>Spiele</div>"+"<div class='table3'>Tore</div>"+"<div class='table4'>Matches</div></div>"+ html;
+    document.getElementById("output").innerHTML = html;
 }
 loadData()
 
