@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Button name="Hans" age="17"/>
+        <Button name="Freehit" age="16"/>
+        <Button name="Maurice" age="16"/>
+        <Button name="Magnus" age="17"/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
