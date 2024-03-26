@@ -1,28 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
+import Person from './components/Person';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App" style={{border:"solid"}}>
         <Button name="Hans" age="17"/>
         <Button name="Freehit" age="16"/>
         <Button name="Maurice" age="16"/>
         <Button name="Magnus" age="17"/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <Person name="Finn" description="Super Coder"/>
     </div>
   );
 }
