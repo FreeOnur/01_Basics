@@ -1,10 +1,12 @@
-
+import Liste from "./components/Liste";
 
 function App() {
   return (
-    <div className="bg-red-900">
-      <h1>hello</h1>
+    <div>
+      <Liste text={"Coffee"} text1={"Tea"} text2={"Beer"}/>
+      
     </div>
+    
   );
 }
 
