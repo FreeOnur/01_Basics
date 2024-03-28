@@ -12,4 +12,5 @@ export default function Card_v2({name, title, imageUrl}) {
       </div>
     </div>
   )
+  
 }
