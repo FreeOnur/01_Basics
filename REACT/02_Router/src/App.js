@@ -9,7 +9,7 @@ import People from "./components/pages/People";
 
 const router = createBrowserRouter([
   {
-    path: "/person",
+    path: "/",
     element: <Person />,
   },
   {
