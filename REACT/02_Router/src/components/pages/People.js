@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Person() {
+export default function People() {
   return (
     <div>
       Hello World
