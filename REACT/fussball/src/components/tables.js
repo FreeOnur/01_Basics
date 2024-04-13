@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Tables(props) {
+export default function Tables() {
     const loadData = () => {
-        fetch("https://api.openligadb.de/getbltable/bl1/2020").then((result) => {
+        fetch("https://api.openligadb.de/getbltable/bl2/2020").then((result) => {
             result.json().then((data) => {
                 getData(data);
     
@@ -12,7 +12,7 @@ export default function Tables(props) {
     const getData = (data) => {
         let html = "";
         data.forEach(element => {
-            html += "<div class='tableTeamName'>" + element.goals + " </div> <div class='tableGoals'>"+ element.shortName +"</div><div class='tableWins'>"+ element.won +"</div><div class='tableLost'>"+ element.lost +"</div><div class='tableDraw'>"+ element.draw +"</div><div class='tableMatches'>"+ element.matches +"</div>"
+            html += "<div class='position: relative left-36'>" + element.goals + " </div> <div class='position: relative right-40'>"+ element.shortName +"</div><div class='position: relative right-20'>"+ element.won +"</div><div class='position: relative right-36'>"+ element.lost +"</div><div class='position: relative right-52'>"+ element.draw +"</div><div class='position: relative right-60'>"+ element.matches +"</div>"
         });
         
         
@@ -20,13 +20,18 @@ export default function Tables(props) {
     }
     loadData()
   return (
-    <div><div class="table1" id="tables">Bundesland</div>
-    <div class="table2" id="tables">Tore</div>
-    <div class="table3" id="tables">Won</div>
-    <div class="table4" id="tables">Lost</div>
-    <div class="table5" id="tables">Draw</div>
-    <div class="table6" >Spiele</div>
-    <div class="border" id="output"></div></div>
+    <div>
+    <div className='flex gap-16'>
+        <div class=''>Bundesland</div>
+    <div class=''>Tore</div>
+    <div class=''>Won</div>
+    <div class=''>Lost</div>
+    <div class=''>Draw</div>
+    <div class='' >Spiele</div>
+    
+    </div>
+    <div class='grid grid-cols-6 w-240' id='output' ></div>
+    </div>
     
   )
 }
