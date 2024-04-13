@@ -12,7 +12,7 @@ export default function Tables() {
     const getData = (data) => {
         let html = "";
         data.forEach(element => {
-            html += "<div class='position: relative left-36'>" + element.goals + " </div> <div class='position: relative right-40'>"+ element.shortName +"</div><div class='position: relative right-20'>"+ element.won +"</div><div class='position: relative right-36'>"+ element.lost +"</div><div class='position: relative right-52'>"+ element.draw +"</div><div class='position: relative right-60'>"+ element.matches +"</div>"
+            html += "<div class='position: relative left-147px mb-4'>" + element.goals + " </div> <div class='position: relative right-40'>"+ element.shortName +"</div><div class='position: relative right-20'>"+ element.won +"</div><div class='position: relative right-36'>"+ element.lost +"</div><div class='position: relative right-52'>"+ element.draw +"</div><div class='position: relative right-269px'>"+ element.matches +"</div>"
         });
         
         
@@ -30,7 +30,7 @@ export default function Tables() {
     <div class='' >Spiele</div>
     
     </div>
-    <div class='grid grid-cols-6 w-240' id='output' ></div>
+    <div class='grid grid-cols-6 w-240 mt-9' id='output' ></div>
     </div>
     
   )
