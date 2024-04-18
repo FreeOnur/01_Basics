@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 
 export default function Tables() {
     const [year, setYear] = useState("2023");
+    const [bl, setBl] = useState("bl");
     
     useEffect(() => {
         loadData();
     }, [year]);
     const loadData = () => {
         
-        fetch("https://api.openligadb.de/getbltable/bl2/"+year).then((result) => {
+        fetch("https://api.openligadb.de/getbltable/"+bl+"/"+year).then((result) => {
             result.json().then((data) => {
                 getData(data);
                 
@@ -29,8 +30,11 @@ export default function Tables() {
         let html = "";        
         sorting(data, "goals")
         data.forEach(element => {
+            if (element.shortName != null) {
+                html += "<div class='position:  relative left-147px mb-4'>" + element.goals + " </div> <div class='position: relative right-40'>"+ element.shortName +"</div></div><div class='position: relative right-20'>"+ element.won +"</div><div class='position: relative right-36'>"+ element.lost +"</div><div class='position: relative right-52'>"+ element.draw +"</div><div class='position: relative right-269px'>"+ element.matches +"</div>"
+
+            }
             
-            html += "<div class='position:  relative left-147px mb-4'>" + element.goals + " </div> <div class='position: relative right-40'>"+ element.shortName +"</div><div class='position: relative right-20'>"+ element.won +"</div><div class='position: relative right-36'>"+ element.lost +"</div><div class='position: relative right-52'>"+ element.draw +"</div><div class='position: relative right-269px'>"+ element.matches +"</div>"
         });
         
         
@@ -60,12 +64,18 @@ export default function Tables() {
             <option value="2009">2009</option>
             <option value="2008">2008</option>
         </select> 
-    <div className='position: relative right-118px'>Bundesland</div>
-    <div id='goals' class='position: relative right-127px'>Tore</div>
-    <div id='wins'class='position: relative right-128px'>Won</div>
-    <div id='loses'class='position: relative right-134px'>Lost</div>
-    <div id='draws'class='position: relative right-134px'>Draw</div>
-    <div id='games'class='position: relative right-139px' >Spiele</div>
+        <select value={bl} onChange={(element) => setBl(element.target.value)} className='position: relative right-170px h-50px w-213px'id='bl' name='bl'>
+            <option value="bl1">bl1</option>
+            <option value="bl2">bl2</option>
+            <option value="bl3">bl3</option>
+            
+        </select> 
+    <div className='position: relative right-229px'>Bundesland</div>
+    <div id='goals' class='position: relative right-232px'>Tore</div>
+    <div id='wins'class='position: relative right-236px'>Won</div>
+    <div id='loses'class='position: relative right-239px'>Lost</div>
+    <div id='draws'class='position: relative right-239px'>Draw</div>
+    <div id='games'class='position: relative right-240px' >Spiele</div>
     
     </div>
     <div class='grid grid-cols-6 mt-9 w-240 border-black' id='output' ></div>
