@@ -43,7 +43,7 @@ export default function Tables() {
   return (
     <div className=' bg-gray-500 border-solid border-4 border-black m-8 w-600px'>
     <div className='flex gap-16 bg-gray-700'>
-       <select value={year} onChange={(element) => setYear(element.target.value)} className='position: relative left-600px'id='year' name='Jahr'>
+       <select value={year} onChange={(element) => setYear(element.target.value)} className='position: relative left-600px h-50px w-213px'id='year' name='Jahr'>
        <option value="2023">2023</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
@@ -61,11 +61,11 @@ export default function Tables() {
             <option value="2008">2008</option>
         </select> 
     <div className='position: relative right-118px'>Bundesland</div>
-    <div id='goals' class='position: relative right-118px'>Tore</div>
-    <div id='wins'class='position: relative right-118px'>Won</div>
-    <div id='loses'class='position: relative right-118px'>Lost</div>
-    <div id='draws'class='position: relative right-118px'>Draw</div>
-    <div id='games'class='position: relative right-118px' >Spiele</div>
+    <div id='goals' class='position: relative right-127px'>Tore</div>
+    <div id='wins'class='position: relative right-128px'>Won</div>
+    <div id='loses'class='position: relative right-134px'>Lost</div>
+    <div id='draws'class='position: relative right-134px'>Draw</div>
+    <div id='games'class='position: relative right-139px' >Spiele</div>
     
     </div>
     <div class='grid grid-cols-6 mt-9 w-240 border-black' id='output' ></div>

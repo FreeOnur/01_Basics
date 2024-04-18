@@ -7,10 +7,13 @@ module.exports = {
         '240': '60rem',
         '38': '9.5rem'
       },
-      backgroundImage: (theme) => ({
-        'bg-table': "url('./src/components/pages/background_fußball.png')"
+      backgroundImage: theme => ({
+        'bg-table': "url('../background_fußballseite.png')"
       }),
-
+      backgroundSize: {
+        'full': '100%',
+        
+      },
       spacing: {
         '1px': '1px',
 '2px': '2px',
