@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function Tables() {
     const [year, setYear] = useState("2023");
-    const [bl, setBl] = useState("bl");
+    const [bl, setBl] = useState("bl1");
     
     useEffect(() => {
         loadData();
