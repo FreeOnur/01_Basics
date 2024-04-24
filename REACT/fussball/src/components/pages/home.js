@@ -36,22 +36,3 @@ export default function Home() {
     
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
