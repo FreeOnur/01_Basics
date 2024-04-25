@@ -14,15 +14,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/table",
-    element: <Tabelle/>,
+    element: <Tabelle />,
   }
-  
+
 ]);
 
 function App() {
   return <RouterProvider router={router} />
-    
-  
+
+
 }
 
 export default App;

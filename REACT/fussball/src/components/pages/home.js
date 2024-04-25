@@ -10,29 +10,30 @@ import johan from '../images/johan_cruyff.jpeg'
 
 
 
-import Slidebar from '../slidebar'
+import Slidebar from '../header'
 
 export default function Home() {
-  return (<div className="w-full relative top h-1000px max-h-full bg-full m-0 grayscale-[80%] bg-gradient-to-r from-orange-500 to-red-500 flex  justify-center items-center">
-                <image src="../images/Diego-Maradona-1986.webp"></image>
-
-    <div className=' text-[30px] border-solid flex justify-center items-center absolute top-0 left-[51%]  bg-gray-800 hover:bg-gray-700 w-48 h-24 border-2 border-black '><Slidebar link={"./table"} name="Tabelle" /> </div>
-    <div className=' text-[30px] border-solid flex justify-center items-center absolute top-0 left-[41%]  bg-gray-800 hover:bg-gray-700 w-48 h-24 border-2 border-black '><Slidebar link={"/"} name="Home" /></div>
-    <div className=' grid grid-cols-4'>
-      <img className='size-80'src={maradonna} alt="Maradonna" />
-      <img className='size-80'src={messi} alt="Messi" />
-      <img className='size-80'src={ronaldo} alt="Ronaldo" />
-      <img className='size-80'src={neymar} alt="Neymar" />
-      <img className='size-80'src={pele} alt="Pele" />
-      <img className='size-80'src={salah} alt="Salah" />
-      <img className='size-80'src={mbappe} alt="Mbappe" />
-      <img className='size-80'src={johan} alt="Mbappe" />
-
-    
+  return (<div className="relative flex items-center justify-center w-full max-h-full m-0 top h-1000px bg-full bg-gradient-to-r from-green-500 to-blue-500">
+    <image src="../images/Diego-Maradona-1986.webp"></image>
+    <div>
+      <div className=' text-[30px] border-solid flex justify-center items-center absolute top-0 left-[51%]  bg-gray-800 hover:bg-gray-700 w-48 h-24 border-2 border-black '><Slidebar link={"./table"} name="Tabelle" /> </div>
+      <div className=' text-[30px] border-solid flex justify-center items-center absolute top-0 left-[41%]  bg-gray-800 hover:bg-gray-700 w-48 h-24 border-2 border-black '><Slidebar link={"/"} name="Home" /></div>
     </div>
-    
+    <div className='grid grid-cols-4 '>
+      <img className='size-80' src={maradonna} alt="Maradonna" />
+      <img className='size-80' src={messi} alt="Messi" />
+      <img className='size-80' src={ronaldo} alt="Ronaldo" />
+      <img className='size-80' src={neymar} alt="Neymar" />
+      <img className='size-80' src={pele} alt="Pele" />
+      <img className='size-80' src={salah} alt="Salah" />
+      <img className='size-80' src={mbappe} alt="Mbappe" />
+      <img className='size-80' src={johan} alt="Mbappe" />
+
 
     </div>
-    
+
+
+  </div>
+
   )
 }
