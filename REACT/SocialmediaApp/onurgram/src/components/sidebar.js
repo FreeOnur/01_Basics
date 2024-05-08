@@ -4,7 +4,7 @@ export default function Sidebar() {
   return (
     <ul>
         <li>
-        <span>Taschenrechner</span>
+        <span className='text-[32px]'>Taschenrechner</span>
         </li>
 
 
