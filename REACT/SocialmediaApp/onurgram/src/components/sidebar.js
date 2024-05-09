@@ -16,11 +16,23 @@ export default function Sidebar( props ) {
     <div>
             <img onClick={toggleSidebar} className={isOpen ? 'size-5 relative left-2 top-2' : ' size-5 relative left-[285px] top-2 '} src={menu} alt='menu'/>
             </div>
-          {Object.entries(props).map(([propNamem, propValue], index)=> (
-            <li key={index} className='mb-[20px] '>
-            <span className='text-[25px] drop-shadow-[10px] text-shadow'>{propValue}</span>
+          
+            <li className='mb-[20px] '>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'>Taschenrechner</span>
             </li>
-          ))}
+            <li className='mb-[20px] '>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'>Converter</span>
+            </li>
+            <li className='mb-[20px] '>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'>CSS-Converter</span>
+            </li>
+            <li className='mb-[20px] '>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'>CodeTester</span>
+            </li>
+            <li className='mb-[20px] '>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'></span>
+            </li>
+          
     </ul>
     
     </div>
