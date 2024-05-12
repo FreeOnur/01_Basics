@@ -30,7 +30,7 @@ export default function Sidebar( props ) {
             <span className='text-[25px] drop-shadow-[10px] text-shadow'>CodeTester</span>
             </li>
             <li className='mb-[20px] '>
-            <span className='text-[25px] drop-shadow-[10px] text-shadow'></span>
+            <span className='text-[25px] drop-shadow-[10px] text-shadow'>QRCode Generator</span>
             </li>
           
     </ul>

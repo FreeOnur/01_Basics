@@ -8,8 +8,9 @@ export default function Home() {
   
   return (
     <div className=' bg-[#2B2B2B] h-[1020px] w-full'>
+      
       <Sidebar/>
-     <QrCode/>
+      <QrCode/>
     </div>
     
   )
