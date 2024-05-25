@@ -8,9 +8,10 @@ export default function Home() {
   
   return (
     <div className=' bg-[#2B2B2B] h-[1020px] w-full'>
+      <div><Sidebar/></div>
       
-      <Sidebar/>
-      <QrCode/>
+      <div className='flex justify-center items-center'><QrCode/></div>
+      
     </div>
     
   )
