@@ -6,6 +6,7 @@ export default function QrCode() {
   const [hidden, setHidden] = useState("");
   const [password, setPassword] = useState("");
   const [SSID, setSSID] = useState("");
+  const [bgColor, setBgColor] = useState("#FFFFFF")
   
   
   let array1 = [wifiType, hidden ? `H:${hidden}` : "", SSID ? `S:${SSID}` : "",password ? `P:${password}` : ""];
@@ -16,11 +17,30 @@ export default function QrCode() {
       wifi += array1[i] + ";";
     
   }
+ 
   
+ 
+ 
   return (
     <div className='flex items-center justify-center w-full h-full'>
+      <div className='relative left-[930px] top-[80px] h-[650px] w-[250px] pr-[30px] bg-[#191919] border border-black'>
+        <div className=' grid grid-cols-2 grid-rows-4 gap-3'>
+          <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Size:</div>
+          <input id='size' type="number" min="0"/>
+          <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-Bg:</div>
+          <input id='qr-bg-color'  onChange={(event) => {
+          setBgColor(event.target.value);
+        }} type="color"/>
+          <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-pixel:</div>
+          <input id='qr-pix-color' type="color"/>
+          <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Logo:</div>
+          <input id='qr-image' className=' w-[127px]' type="file"/>
+       
+          
+        </div>
+      </div>
       <div className='grid grid-cols-1'>
-
+    	    
         <div className='w-[650px] h-[100px] mb-[20px] mt-[40px] relative border border-black bg-[#939393]'>
 
           <div>
@@ -57,7 +77,7 @@ export default function QrCode() {
         </div>
 
         <div className='flex justify-center items-center border border-black w-[650px] h-[650px] bg-white'>
-          <QRCode value={wifi} />
+          <QRCode value={wifi} bgColor={bgColor}/>
         </div>
 
       </div>
