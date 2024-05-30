@@ -8,6 +8,7 @@ export default function QrCode() {
   const [SSID, setSSID] = useState("");
   const [bgColor, setBgColor] = useState("#FFFFFF")
   const [fgColor, setFgColor] = useState("#00000")  
+  const [qrImg, setImg] = useState("")
   
   let array1 = [wifiType, hidden ? `H:${hidden}` : "", SSID ? `S:${SSID}` : "",password ? `P:${password}` : ""];
 
@@ -18,7 +19,7 @@ export default function QrCode() {
     
   }
   
-  
+
  
  
   return (
@@ -32,7 +33,14 @@ export default function QrCode() {
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-pixel:</div>
           <input id='qr-pix-color' onChange={(element) => {setFgColor(element.target.value);}} type="color"/>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Logo:</div>
-          <input id='qr-image' className=' w-[127px]' type="file"/>
+          <input id='qr-image' onChange={(e) => {
+            let file = e.target.files[0];
+            let reader = new FileReader;
+            reader.onload = (e) => {
+              setImg(e.target.result)
+            }
+            reader.readAsDataURL(file);
+          }} className=' w-[127px]' type="file"/>
        
           
         </div>
@@ -76,7 +84,7 @@ export default function QrCode() {
 
         <div className='flex justify-center items-center border border-black w-[650px] h-[650px] bg-white'>
           <QRCode level='H' value={wifi} bgColor={bgColor} fgColor={fgColor} imageSettings={{
-            src: "https://static.zpao.com/favicon.png",
+            src: qrImg,
             x: undefined,
             y: undefined,
             height: 24,
