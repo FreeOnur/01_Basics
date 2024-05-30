@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import QRCode from 'react-qr-code';
+import QRCode from 'qrcode.react';
 
 export default function QrCode() {
   const [wifiType, setWifiType] = useState("T:WPA");
@@ -7,7 +7,7 @@ export default function QrCode() {
   const [password, setPassword] = useState("");
   const [SSID, setSSID] = useState("");
   const [bgColor, setBgColor] = useState("#FFFFFF")
-  
+  const [fgColor, setFgColor] = useState("#00000")  
   
   let array1 = [wifiType, hidden ? `H:${hidden}` : "", SSID ? `S:${SSID}` : "",password ? `P:${password}` : ""];
 
@@ -17,7 +17,7 @@ export default function QrCode() {
       wifi += array1[i] + ";";
     
   }
- 
+  
   
  
  
@@ -28,11 +28,9 @@ export default function QrCode() {
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Size:</div>
           <input id='size' type="number" min="0"/>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-Bg:</div>
-          <input id='qr-bg-color'  onChange={(event) => {
-          setBgColor(event.target.value);
-        }} type="color"/>
+          <input id='qr-bg-color'  onChange={(element) => {setBgColor(element.target.value);}} type="color"/>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-pixel:</div>
-          <input id='qr-pix-color' type="color"/>
+          <input id='qr-pix-color' onChange={(element) => {setFgColor(element.target.value);}} type="color"/>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Logo:</div>
           <input id='qr-image' className=' w-[127px]' type="file"/>
        
@@ -77,7 +75,14 @@ export default function QrCode() {
         </div>
 
         <div className='flex justify-center items-center border border-black w-[650px] h-[650px] bg-white'>
-          <QRCode value={wifi} bgColor={bgColor}/>
+          <QRCode level='H' value={wifi} bgColor={bgColor} fgColor={fgColor} imageSettings={{
+            src: "https://static.zpao.com/favicon.png",
+            x: undefined,
+            y: undefined,
+            height: 24,
+            width: 24,
+            excavate: true,
+          }}/>
         </div>
 
       </div>
