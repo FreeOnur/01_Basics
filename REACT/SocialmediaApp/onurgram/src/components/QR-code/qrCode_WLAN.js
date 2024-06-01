@@ -66,8 +66,7 @@ export default function QrCode_WLAN() {
         <Link to="/" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>WLAN</Link>
         <Link to="/qrcode-TEXT" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>TEXT</Link>
         <Link to="/qrcode-SMS" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>SMS</Link>
-        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>EMAIL</Link>
-        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>BITCOIN</Link>   
+        <Link to="/qrcode-EMAIL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>EMAIL</Link>
         
 
        

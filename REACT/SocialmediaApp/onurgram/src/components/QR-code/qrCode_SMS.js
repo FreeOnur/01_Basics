@@ -51,8 +51,7 @@ export default function QrCode_SMS() {
         <Link to="/" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>WLAN</Link>
         <Link to="/qrcode-TEXT" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>TEXT</Link>
         <Link to="/qrcode-SMS" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>SMS</Link>
-        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>EMAIL</Link>
-        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>BITCOIN</Link>   
+        <Link to="/qrcode-EMAIL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>EMAIL</Link>
         
 
        
@@ -70,7 +69,7 @@ export default function QrCode_SMS() {
           </div>
 
           <div>
-            <input onChange={(e) => setMessage(e.target.value)} type='text' className='absolute left-[450px] bg-white opacity-100'/>
+            <textarea rows={3} onChange={(e) => setMessage(e.target.value)} type='text' className='absolute left-[450px] bg-white opacity-100'/>
             <h1 className='absolute top-[0px] right-[39%] text-white'>Message:</h1>
           </div>
 
