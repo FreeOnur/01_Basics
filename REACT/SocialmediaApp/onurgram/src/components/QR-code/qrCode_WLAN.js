@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import QRCode from 'qrcode.react';
+import { Link } from 'react-router-dom';
 
-export default function QrCode() {
+export default function QrCode_WLAN() {
   const [wifiType, setWifiType] = useState("T:WPA");
   const [hidden, setHidden] = useState("");
   const [password, setPassword] = useState("");
@@ -60,6 +61,14 @@ export default function QrCode() {
             setCenterSizeWidth(24)
 
           }} className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased border border-white ml-[20px]'>Reset</button>
+          <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>QR Code Type:</div>
+        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>URL</Link>
+        <Link to="/" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>WLAN</Link>
+        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>TEXT</Link>
+        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>SMS</Link>
+        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>EMAIL</Link>
+        <Link to="/qrcode-URL" className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>BITCOIN</Link>   
+        
 
        
           
