@@ -6,6 +6,7 @@ import {
 import Home from './components/pages/Home';
 import QrCodeURLPage from './components/pages/QrCodeURLPage';
 import QrCodeTextPage from './components/pages/QrCodeTextPage';
+import QrCodeSMSPage from './components/pages/QrCodeSMSPage';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,12 @@ const router = createBrowserRouter([
   {
     path: "/qrcode-TEXT",
     element: <QrCodeTextPage/>
+  },
+  {
+    path: "/qrcode-SMS",
+    element: <QrCodeSMSPage/>
   }
+
 ]);
 
 function App() {
