@@ -11,17 +11,6 @@ export default function QrCode_SMS() {
   const [qrSize, setQrSize] = useState(128)
   const [centerSizeWidth, setCenterSizeWidth] = useState(24)
   const [centerSizeHeight, setCenterSizeHeight] = useState(24)
-
-  
-  
-  let array1 = [phoneNumber, message];
-
-  let sms = "smsto:";
-  for (let i = 0; i < array1.length; i++) {
-     
-      sms += array1[i] + ":";
-    
-  } 
   
   return (
     <div className='flex items-center justify-center w-full h-full'>
@@ -88,7 +77,7 @@ export default function QrCode_SMS() {
         </div>
 
         <div className='flex justify-center items-center border border-black w-[650px] h-[650px] bg-white'>
-          <QRCode level='H' size={qrSize} value={sms} bgColor={bgColor} fgColor={fgColor} imageSettings={{
+          <QRCode level='H' size={qrSize} value={"smsto:"+phoneNumber+":"+message} bgColor={bgColor} fgColor={fgColor} imageSettings={{
             src: qrImg,
             height: centerSizeHeight,
             width: centerSizeWidth,
