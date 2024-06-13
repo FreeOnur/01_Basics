@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 export default function QrCode_EMAIL() {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("Hello World");
   const [bgColor, setBgColor] = useState("#000000")
   const [fgColor, setFgColor] = useState("#FFFFFF")  
   const [qrImg, setImg] = useState("")
@@ -15,7 +14,7 @@ export default function QrCode_EMAIL() {
   return (
     <div className='flex items-center justify-center w-full h-full'>
       <div className='relative left-[930px] top-[80px] h-[650px] w-[250px] pr-[30px] bg-[#191919] border border-black'>
-        <div className=' grid grid-cols-2 grid-rows-4 gap-3'>
+        <div className='grid grid-cols-2 grid-rows-4 gap-3 '>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Size:</div>
           <input id='size' onChange={(element) => {setQrSize(element.target.value);}} type="number" min="48"/>
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>Colour-Bg:</div>
@@ -36,7 +35,7 @@ export default function QrCode_EMAIL() {
           <div className='font-poppins drop-shadow-[10px] text-shadow-white text-white antialiased'>W:</div>
           <input id='size' className='w-[30px]' onChange={(element) => {setCenterSizeWidth(element.target.value);}} type="number" min="0"/>
           <button onClick={() => {
-            setMessage("")
+            
             setEmail("")
             setBgColor("#000000")
             setFgColor("#FFFFFF")

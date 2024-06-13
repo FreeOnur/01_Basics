@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import menu from './images/speisekarte.png'
+import { Link } from 'react-router-dom';
 
 export default function Sidebar( props ) {
   const [isOpen, setIsOpen] = useState(true)
@@ -18,7 +19,7 @@ export default function Sidebar( props ) {
             </div>
           
             <li className='mb-[20px] '>
-            <span className='text-[25px] drop-shadow-[10px] text-shadow'>Taschenrechner</span>
+            <Link to="/food-random" className='text-[25px] drop-shadow-[10px] text-shadow'>Food Randomizer</Link>
             </li>
             <li className='mb-[20px] '>
             <span className='text-[25px] drop-shadow-[10px] text-shadow'>Converter</span>

@@ -8,6 +8,7 @@ import QrCodeURLPage from './components/pages/QrCodeURLPage';
 import QrCodeTextPage from './components/pages/QrCodeTextPage';
 import QrCodeSMSPage from './components/pages/QrCodeSMSPage';
 import QrCodeEMAILPage from './components/pages/QrCodeEMAILPage';
+import FoodRandomizer from './components/pages/foodRandomizer';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/qrcode-EMAIL",
     element: <QrCodeEMAILPage/>
+  },
+  {
+    path: "/food-random",
+    element: <FoodRandomizer/>
   }
 
 ]);
