@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-let rotation = Math.round(Math.random() * 360 + 360)
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     fontFamily: {
       'poppins': ['poppins', 'sans-serif']
     },
     extend: {
-      rotate: {
-        'random': { transform: `rotate(${rotation})` },
-
+      keyframes: {
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
-        rotate: 'rotate 7s linear forwards',
+        rotate: 'rotate 7s linear infinite', 
       },
     },
   },
   plugins: [],
 }
-
