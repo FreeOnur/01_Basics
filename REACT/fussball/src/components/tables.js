@@ -9,7 +9,7 @@ export default function Tables() {
     }, [year]);
     const loadData = () => {
         
-        fetch("https://api.openligadb.de/getbltable/"+bl+"/"+year).then((result) => {
+        fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=").then((result) => {
             result.json().then((data) => {
                 getData(data);
                 
